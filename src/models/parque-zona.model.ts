@@ -9,6 +9,15 @@ export class ParqueZona extends Entity {
   })
   Codigo?: number;
 
+  @property({
+    type: 'number',
+  })
+  parqueCodigo?: number;
+
+  @property({
+    type: 'number',
+  })
+  zonaCodigo?: number;
 
   constructor(data?: Partial<ParqueZona>) {
     super(data);

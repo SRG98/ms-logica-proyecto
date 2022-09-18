@@ -9,6 +9,15 @@ export class ZonaComida extends Entity {
   })
   Codigo?: number;
 
+  @property({
+    type: 'number',
+  })
+  zonaCodigo?: number;
+
+  @property({
+    type: 'number',
+  })
+  puestoComidaCodigo?: number;
 
   constructor(data?: Partial<ZonaComida>) {
     super(data);
